@@ -1,0 +1,163 @@
+@font-face {font-family: "Capitolina W03 SemiBold";
+  src: url("../fonts/capitolina.eot"); /* IE9*/
+  src: url("../fonts/capitolina.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/capitolina.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/capitolina.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/capitolina.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/capitolina.svg#Capitolina W03 SemiBold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Capitolina W03 Bold";
+  src: url("../fonts/capitolina-bold.eot"); /* IE9*/
+  src: url("../fonts/capitolina-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/capitolina-bold.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/capitolina-bold.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/capitolina-bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/capitolina-bold.svg#Capitolina W03 Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'omnesbold';
+    src: url('../fonts/omnes_bold.woff2') format('woff2'),
+         url('../fonts/omnes_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'omnesregular';
+    src: url('../fonts/omnes_regular.woff2') format('woff2'),
+         url('../fonts/omnes_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'omnessemibold';
+    src: url('../fonts/omnes_semibold.woff2') format('woff2'),
+         url('../fonts/omnes_semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {font-family: 'omnesregular'; font-size:16px; line-height:26px; color:#283269; margin:0px; padding:0px; overflow-x:hidden; font-weight:400; background:#FAFAFA;}
+/* Common CSS Start */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+a, a:hover, a:focus {text-decoration:none; transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; color:#2e3192;}
+h1,h2,h3,h4,h5,h6 {font-family: "Capitolina W03 Bold"; margin:0px; color:#283269; line-height:28px;}
+h1 {font-size:54px;}
+h2 {font-size:32px;}
+h3 {font-size:28px;}
+h4 {font-size:24px;}
+h5 {font-size:18px;}
+h6 {font-size:16px;}
+.mb-6 {margin-bottom:60px;}
+.btn, .btn:hover, .btn:focus {border-radius:35px; color:#fff; font-size:17px; width:150px; padding:7px 30px; box-shadow:none; font-family: 'omnessemibold';}
+.tcz-btn-green {background:#97BB00;}
+.tcz-btn-light-green {background:#38B5AB;}
+.tcz-btn-red {background:#EE0279;}
+.tcz-btn-blue {background:#283269;}
+.tcz-btn-submit, .tcz-btn-submit:hover, .tcz-btn-submit:focus {background:#EE0279; color:#fff; box-shadow:0px 8px 10px -4px  rgba(238, 2, 121, 0.5);}
+.owl-theme .owl-dots .owl-dot span {background:#CCCCCC !important;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background:#FC3465 !important;}
+.container {max-width:1200px;}
+.asteric {color:#D50019; font-size:18px;}
+label {font-size:18px;}
+select, select:hover, select:focus {font-size:16px !important; min-height:48px; box-shadow:none !important;}
+input.form-control, input.form-control:hover, input.form-control:focus {font-size:16px !important; min-height:48px; box-shadow:none !important;}
+textarea, textarea:hover, textarea:focus{font-size:16px !important; box-shadow:none !important; resize:none;}
+/* Common CSS End */
+
+/*Navbar CSS Start*/
+.navbar {flex-wrap:wrap;}
+.navbar-expand-lg .navbar-nav .nav-link {font-family: 'omnessemibold'; font-size:18px; color:#283269; letter-spacing:.06em; padding:0px 12px; position: relative;}
+.navbar-expand-lg .navbar-nav .nav-link:hover, .fixed-header .navbar-expand-lg .navbar-nav .nav-link:focus {color:#EE0279;}
+
+.navbar-expand-lg .navbar-nav li .nav-link.active {color:#EE0279;}
+.navbar-expand-lg .navbar-nav li .nav-link span {display:none;}
+ .navbar-expand-lg .navbar-nav li .nav-link.active span {position: absolute; bottom:-10px; left:0; right: 0; margin: 0 auto; line-height:normal;display:block;}
+ .navbar-expand-lg .navbar-nav li .nav-link span i {display:none;}
+ .navbar-expand-lg .navbar-nav li .nav-link.active span i {color:#9E006E; font-size:3px; margin-left:0px; display:inline-block;} 
+
+.navbar-expand-lg .navbar-nav .nav-link.active span i.orange {color:#EE0279;}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {padding-right:0px;}
+.navbar-brand img {max-height:90px;}
+.screen-overlay.show {transition: opacity 0.5s ease, width 0s; opacity: 1; width: 100%; visibility: visible; z-index:999;}
+.fixed-header {position:fixed; top:0; left:0; right:0; z-index:1111; width:100%; background:#FAFAFA; box-shadow: 0 8px 25px 0 rgb(0 0 0 / 15%); -moz-box-shadow: 0 8px 25px 0 rgba(0,0,0,.04); -webkit-box-shadow: 0 8px 25px 0 rgb(0 0 0 / 15%); -o-box-shadow: 0 8px 25px 0 rgba(0,0,0,.04); padding-top:0px;}
+.fixed-header .navbar-nav .nav-link {color:#333;}
+.screen-overlay {width: 0%; height: 100%; position: fixed; top: 0; left: 0; opacity: 0; visibility: hidden; background-color: rgba(34, 34, 34, 0.6); -webkit-transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in; transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in}
+.header-right-contact ul li a {font-weight:700; color:#1877f2;}
+.dropdown-menu {padding:0px; margin-top:33px !important; border-radius:0px 0px 10px 10px; border:none;}
+.dropdown-menu .dropdown-item:hover {background:#2e3192; color:#fff;}
+.dropdown-toggle::after {content:inherit;}
+/*Navbar CSS End*/
+
+/* Banner Section CSS Start */
+.homebanner {background: url(../images/waves.png) top left no-repeat; background-size:cover;}
+.homebanner .left h1 {line-height:72px; font-family: "Capitolina W03 Bold";}
+.homebanner .left h1 span.voilet {color:#9E006E; font-family: "Capitolina W03 Bold";}
+.homebanner .left h1 span.blue {color:#EE0279; font-family: "Capitolina W03 Bold";}
+.homebanner .left p {line-height:36px; font-size:24px;}
+/*Slider Section CSS Start*/
+.owl-stage-outer {padding: 20px 0px;}
+.card-sec .item .card {box-shadow: 0px 3px 16px #0000001A; border-radius:20px;}
+.card-sec .item .card img {border-radius:20px 20px 0px 0px;}
+.card-sec .item .card .card-body h2 {line-height:36px;} 
+.card-one {background:#FBFFE8;}
+.card-two {background:#D3FFFC;}
+.card-three {background:#FFE9E9;}
+.card-four {background:#E3E8FF;}
+.card-sec .item .card-two .card-body h4 {color:#3B3B3B;}
+
+/*Footer Section CSS Start*/
+footer .container {border-top:2px solid #283269; padding:50px 15px;}
+footer h4 {font-family: 'omnessemibold';}
+.footer-nav ul li {padding:5px 0px;}
+.footer-social-links h4 {color:#000000;}
+.footer-social-links ul li a {font-size:22px; color:#000000; }
+.foter-strip {background:#283269; padding:15px 0px; color: rgba(255, 255, 255, 0.8)}
+.foter-strip .container {padding:0px 15px; border-top:none;}
+.foter-strip .container ul li a {padding:0px 20px; color: rgba(255, 255, 255, 0.8);}
+
+/* Enquiry Form Page CSS Start */
+.enquiry-banner {background: url(../images/e-banner.png) left top no-repeat; background-size: cover; height:302px;}
+.enquiry-banner .banner-content {position:absolute; top:0; left:auto; right:auto; height:100%;}
+.enquiry-banner .banner-content p {font-size:24px; color:#fff; line-height:32px;}
+.form-left .card {background:#D3FFFC; border-radius:10px; }
+.form-left .card a {color:#38B5AB;}
+.first-para {font-family: 'omnessemibold';}
+.second-para {font-family: 'omnesregular';}
+.third-para {font-family: 'omnessemibold';}
+.form-right .card h2 {font-family: 'omnessemibold'; font-size:36px;}
+.form-right .card {background:#FFE9E9; border-radius:20px; padding:50px;}
+
+/* Thanks Page CSS Start */
+.thnks-msg h3 {font-size:60px; font-family: 'omnessemibold';}
+.thnks-msg p {font-size:24px; line-height:30px;}
+
+/* Page Load Modal CSS Start */
+.home-modal .modal-content {border-radius:10px;}
+.home-modal .modal-dialog {max-width:900px;}
+.modal-backdrop {background-color:#4D4D4D;}
+.modal-backdrop.show {opacity:1;}
+.home-modal .left {height:100vh;}
+.home-modal .left img {object-fit:cover; width:100%; border-radius:10px 0px 0px 10px;}
+.home-modal .right {padding:50px;}
+.home-modal h4 span.hutch {color:#9E006E; text-transform:uppercase;}
+.home-modal h4 span.med {color:#EE0279; text-transform:uppercase;}
+.home-modal h5 {font-family: 'omnessemibold';}
+.tcz-btn-voilet, .tcz-btn-voilet:hover, .tcz-btn-voilet:focus {background:#9E006E; padding:15px 24px;}
+.tcz-btn-voilet-border {border-color:#9E006E; color:#9E006E; padding:15px 24px;} 
+.tcz-btn-voilet-border:hover, .tcz-btn-voilet-border:focus {background:#9E006E;  color:#fff; padding:15px 24px;}
